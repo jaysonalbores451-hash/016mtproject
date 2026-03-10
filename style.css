@@ -1,0 +1,500 @@
+/* Added this rule to fix the "width + padding" math error */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("black.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #020123;
+    margin: 0;
+    padding: 0;
+    color: #fffdfd;
+    font: 0.8em/1.6 Tahoma, sans-serif;
+    letter-spacing: 0.1em;
+    /* Added these two lines to stop the horizontal dragging */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.page-wrapper {
+    background-color: transparent;
+    background-position: bottom right;
+    background-image: url(killua.png);
+    background-repeat: no-repeat;
+    width: 100%; /* Corrected from 99% to prevent the 1% gap */
+    height: 100%;
+    margin-top: 100px;
+    padding-top: 200px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+}
+
+header h1 {
+    background-image: url(garden.png);
+    background-repeat: no-repeat;
+    width: 306px;
+    height: 36px;
+    margin: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header h2 {
+    background-image: url(beauty.png);
+    background-repeat: no-repeat;
+    width: 306px;
+    height: 24px;
+    margin: 0px;
+    margin-left: 70px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    right: 28px;
+    top: 195px;
+    width: 306px;
+}
+
+.extra3 {
+    position: absolute;
+    right: 30px;
+    top: 280px;
+    background-image: url(preamble.png);
+    background-repeat: no-repeat;
+    height: 156px;
+    width: 300px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.preamble {
+    margin-right: 420px;
+    margin-left: 25px;
+    padding: 5px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.preamble h3 {
+    width: 190px;
+    height: 190px;
+    margin-top: 0;
+    display: inline;
+    float: left;
+    background-image: url(theroad.png);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.preamble p {
+    margin-left: 25px;
+    margin-right: 15px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.explanation {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-right: 370px;
+    padding: 5px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.explanation h3 {
+    width: 150px;
+    height: 140px;
+    display: inline;
+    float: left;
+    background-image: url(whatabout.png);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.explanation p {
+    margin-left: 25px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.benefits {
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-right: 340px;
+    padding: 5px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.benefits h3 {
+    width: 150px;
+    height: 150px;
+    display: inline;
+    float: right;
+    background-image: url(benefits.png);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.benefits p {
+    margin-left: 15px;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+.participation {
+    margin-top: 30px;
+    margin-bottom: 110px;
+    margin-left: 50px;
+    margin-right: 335px;
+    padding: 5px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.participation h3 {
+    width: 160px;
+    height: 155px;
+    margin-top: 15px;
+    display: inline;
+    float: left;
+    background-image: url(participate.png);
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.participation p {
+    margin-left: 25px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.requirements {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 130px;
+    margin-right: 150px;
+    padding: 5px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.requirements h3 {
+    margin-top: 15px;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    float: left;
+    background-image: url(requirements.png);
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.requirements p {
+    margin-left: 25px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.supporting {
+    margin-top: 100px;
+}
+
+.sidebar {
+    position: absolute;
+    color: #425162;
+    background-color: transparent;
+    top: 437px;
+    right: 30px;
+    width: 300px;
+    height: 450px;
+    background-image: url(navigation.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.sidebar .wrapper {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 260px;
+    height: 350px;
+    overflow: auto;
+    font: 11px "Courier New", monospace;
+    color: #95A5BB;
+    background-color: transparent;
+}
+
+h3.select, h3.archives, h3.resources {
+    font: bold 12px "Courier New", monospace;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #1D2139;
+    background-color: #555764;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 0;
+}
+
+li {
+    margin-left: -15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+li:hover {
+    margin-left: -15px;
+    margin-right: 15px;
+    background-color: #555764;
+    color: #1D2139;
+}
+
+a:link {
+    color: #C6B768;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #867833;
+    background-color: transparent;
+    text-decoration: line-through;
+}
+
+a:hover, a:focus {
+    color: #EBD678;
+    background-color: transparent; 
+    text-decoration: underline;
+}
+
+.extra1 {
+    position: absolute;
+    background-image: url(validation.png);
+    background-repeat: no-repeat;
+    top: 887px;
+    right: 30px;
+    width: 300px;
+    height: 100px;
+    z-index: 1;
+}
+
+footer {
+    font: 11px "Courier New", monospace;
+    position: absolute;
+    top: 922px;
+    right: 50px;
+    z-index: 2;
+    padding: 8px 15px;
+    /* Changed height and overflow to remove arrows */
+    height: auto; 
+    overflow: visible;
+    width: 228px;
+}
+
+.extra2 {
+    position: absolute;
+    background-image: url(download.png);
+    background-repeat: no-repeat;
+    top: 987px;
+    right: 30px;
+    width: 300px;
+    height: 100px;
+    z-index: 1;
+}
+
+.summary {
+    width: 228px;
+    position: absolute;
+    top: 1022px;
+    right: 50px;
+    z-index: 2;
+    padding: 0 15px;
+    /* Changed height and overflow to remove arrows */
+    height: auto;
+    overflow: visible;
+}
+
+.summary p:first-child  {
+    display: none;
+}
+
+.summary p:last-child {
+    margin-top: 4px;
+    color: #95A5BB;
+    background-color: transparent;
+    font: 11px "Courier New", monospace;
+}
+
+.extra4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;          
+    height: 400px;         
+    background-image: url("moon.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    z-index: -1;           
+    pointer-events: none; 
+}
+
+.extra5 {
+    position: absolute;
+    top: 0;             
+    left: 0;             
+    width: 300px;         
+    height: 300px; 
+    background-image: url("killua.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    z-index: -2;        
+    opacity: 0.6;          
+    pointer-events: none; 
+}
+
+@keyframes floatMoon {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulseKillua {
+    0% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.03); }
+    100% { opacity: 0.5; transform: scale(1); }
+}
+
+@keyframes slideSidebar {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.extra4 {
+    animation: floatMoon 6s ease-in-out infinite;
+}
+
+.extra5 {
+    animation: pulseKillua 10s ease-in-out infinite;
+}
+
+.sidebar {
+    animation: slideSidebar 1.5s ease-out;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #EBD678;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.2); }
+    100% { opacity: 0.3; transform: scale(1); }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 20px 30px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 80px 120px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 110px 210px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 150px 50px, #fff, rgba(0,0,0,0));
+    background-size: 200px 200px; 
+    z-index: -3; 
+    animation: twinkle 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-45deg) scale(0);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(-100px) translateY(100px) rotate(-45deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-500px) translateY(500px) rotate(-45deg) scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-500px) translateY(500px) rotate(-45deg) scale(0);
+        opacity: 0;
+    }
+}
+
+.page-wrapper::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    right: 10%;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+    z-index: -2; 
+    animation: shootingStar 8s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes killuaDance {
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg) scale(1); 
+    }
+    25% { 
+        transform: translateY(-15px) rotate(-5deg) scale(1.05); 
+    }
+    50% { 
+        transform: translateY(0) rotate(0deg) scale(1); 
+    }
+    75% { 
+        transform: translateY(-15px) rotate(5deg) scale(1.05); 
+    }
+}
+
+.extra5 {
+    animation: killuaDance 2s ease-in-out infinite;
+    opacity: 0.8; 
+    transition: opacity 0.5s ease;
+}
+
+.extra5:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(173, 216, 230, 0.6)); 
+}
